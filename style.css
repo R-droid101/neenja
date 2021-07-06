@@ -16,16 +16,16 @@ html {
 
 ::-moz-selection {
     color: white;
-    background: #008080;
+    background: #42422c;
 }
 
 ::selection {
     color: white;
-    background: #008080;
+    background: #42422c;
 }
 
 body::-webkit-scrollbar {
-    width: 0.1rem;
+    width: 0.4rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -447,8 +447,11 @@ section.project {
         flex-direction: column;
         text-align: center;
     }
-    .home {
+    .about {
         flex-direction: column;
+    }
+    .about h2 {
+        text-align: center;
     }
     .image {
         width: 100%;
