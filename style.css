@@ -14,16 +14,6 @@ html {
     scroll-behavior: smooth;
 }
 
-::-moz-selection {
-    color: white;
-    background: #42422c;
-}
-
-::selection {
-    color: white;
-    background: #42422c;
-}
-
 body::-webkit-scrollbar {
     width: 0.4rem;
 }
@@ -108,8 +98,16 @@ nav {
     color: hsl(358, 71%, 47%);
 }
 
+.home-select::selection {
+    background: hsl(358, 71%, 47%);
+}
+
 #about-nav:hover {
     color: hsl(193, 59%, 57%);
+}
+
+.about-select::selection {
+    background: hsl(193, 59%, 57%);
 }
 
 #members-nav:hover {
@@ -413,6 +411,7 @@ section.project {
         position: absolute;
         margin-left: 0;
     }
+
     .nav-links {
         position: absolute;
         display: flex;
@@ -430,66 +429,80 @@ section.project {
         transition: transform 0.5s ease-in;
         z-index: 99;
     }
+
     .nav-links li {
         padding: 1.5rem 2rem;
         opacity: 0;
     }
+
     .nav-links a {
         margin: 0px 1px !important;
     }
+
     .burger {
         margin: 3rem;
         display: block;
     }
+
     section {
         padding: 0rem;
         margin: 2rem 0rem;
         flex-direction: column;
         text-align: center;
     }
+
     .about {
         flex-direction: column;
     }
     .about h2 {
         text-align: center;
     }
+
     .image {
         width: 100%;
         margin: 0rem auto 1.5rem auto;
         max-width: 20rem;
         display: block;
     }
+
     .image img {
         width: 100%;
         border-radius: 2rem;
         /* box-shadow: 1px 1px 10px rgb(0 0 0 / 50%); */
         text-align: center;
     }
+
     .content {
         /* flex: 2; */
         width: 100%;
         margin: 0rem;
     }
+
     h2 {
         font-size: 3rem;
         letter-spacing: 2.5px;
     }
+
     p {
         margin: 1.3rem 0;
         font-size: 1.2rem;
         letter-spacing: 1px;
     }
+
     .content-members {
         padding-right: 0rem;
     }
+
     .cards {
         margin: 1rem 0rem;
     }
+
     .card {
         width: 15rem;
         height: 20rem;
         margin: 1rem 0rem;
     }
+
     .social-links img {
         width: 1.5rem;
         height: 1.5rem;
@@ -497,38 +510,48 @@ section.project {
         filter: invert(100%) sepia(31%) saturate(2%) hue-rotate(286deg) brightness(108%) contrast(101%);
         transition: filter 0.4s;
     }
+
     .card-title {
         font-size: 18px;
     }
+
     .card-name {
         font-size: 20px;
     }
+
     .card-img {
         width: 10rem;
         height: 10rem;
     }
+
     .card-back {
         padding: 20px;
     }
+
     .card-description {
         font-size: 13px;
         margin: 5px 5px;
     }
+
     h3 {
         font-size: 1.8rem;
     }
+
     .project li {
         font-size: 0rem;
     }
+
     .project {
         width: 100%;
         padding-right: 0rem;
     }
+
     section.project {
         display: list-item;
         list-style-type: none;
         margin-top: 0rem;
     }
+
     .gandalf, .odin {
         display: flex;
         flex-direction: column;
@@ -540,10 +563,12 @@ section.project {
         /* box-shadow: -0px -0px 15px rgb(0, 0, 0); */
         border-radius: 3rem;
     }
+
     .gandalf.image {
         margin: 0rem;
         padding: 0rem;
     }
+
     .gandalf.content {
         width: 100%;
     }
@@ -554,9 +579,11 @@ section.project {
         display: block;
         margin: 1rem;
     }
+
     .logo-container {
         font-size: 0.9rem;
     }
+
     h1 {
         margin-left: 20px;
     }
@@ -571,6 +598,7 @@ section.project {
         opacity: 0;
         transform: translateX(50px);
     }
+    
     to {
         opacity: 1;
         transform: translateX(0px)
